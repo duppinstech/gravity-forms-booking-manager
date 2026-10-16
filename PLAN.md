@@ -67,10 +67,10 @@ Status: done. Published 2026-10-16 as GitHub release `v0.4.0` on `duppinstech/gr
 
 ## Field layout 0.4.1
 
-Status: on main. Not a GitHub Release yet, so the updater still serves 0.4.0.
+Status: done. Published 2026-10-16 as GitHub release `v0.4.1`.
 
 - [x] Compact calendar, year dropdown beside the month, slot spacing, and a selection line.
-- [ ] GitHub release `v0.4.1` when asked.
+- [x] GitHub release `v0.4.1` with `gravity-forms-booking-manager.zip`.
 
 ## Testing with Docker
 
