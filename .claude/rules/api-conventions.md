@@ -30,4 +30,4 @@ A new AJAX or REST route needs a nonce or capability check, sanitized input, and
 
 ## Updates
 
-`GFBM_Updater` reads `https://api.github.com/repos/oduppinsjr/gravity-forms-booking-manager/releases/latest`. The installable package is a `.zip` release asset. Do not point the updater at the GitHub auto-generated source zip.
+`GFBM_Updater` reads `https://api.github.com/repos/duppinstech/gravity-forms-booking-manager/releases/latest`. The installable package is a `.zip` release asset. Do not point the updater at the GitHub auto-generated source zip.

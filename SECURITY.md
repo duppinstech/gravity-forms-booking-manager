@@ -10,7 +10,7 @@ If you discover a security issue, please **do not** open a public GitHub issue w
 
 Report it by email to support@duppinstech.com, or through GitHub private vulnerability reporting:
 
-https://github.com/oduppinsjr/gravity-forms-booking-manager/security/advisories/new
+https://github.com/duppinstech/gravity-forms-booking-manager/security/advisories/new
 
 Include:
 

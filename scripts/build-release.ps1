@@ -44,7 +44,15 @@ if (Test-Path $zipPath) {
     Remove-Item $zipPath -Force
 }
 
-Compress-Archive -Path (Join-Path $root 'release\staging\gravity-forms-booking-manager') -DestinationPath $zipPath -Force
+# tar writes forward-slash paths. Compress-Archive on Windows uses backslashes, which WordPress on Linux will not install.
+$tar = Get-Command tar.exe -ErrorAction SilentlyContinue
+if (-not $tar) {
+    throw 'tar.exe is required to build a WordPress-installable zip.'
+}
+& tar.exe -a -cf $zipPath -C (Join-Path $root 'release\staging') 'gravity-forms-booking-manager'
+if ($LASTEXITCODE -ne 0) {
+    throw "tar failed with exit code $LASTEXITCODE"
+}
 
 Remove-Item (Join-Path $root 'release\staging') -Recurse -Force
 

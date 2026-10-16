@@ -17,7 +17,7 @@ WordPress plugin that adds a **Booking Manager** field to [Gravity Forms](https:
 
 ### From a release ZIP (production)
 
-1. Download the `.zip` from [GitHub Releases](https://github.com/oduppinsjr/gravity-forms-booking-manager/releases).
+1. Download the `.zip` from [GitHub Releases](https://github.com/duppinstech/gravity-forms-booking-manager/releases).
 2. In WordPress: **Plugins → Add New → Upload Plugin**, choose the zip, install, and activate.
 
 The zip must contain a single top-level folder named `gravity-forms-booking-manager` (use the build script below).
@@ -81,7 +81,7 @@ In WordPress admin, open **Forms → Bookings**. The list shows upcoming appoint
 
 ## Updates from GitHub
 
-The plugin checks `https://github.com/oduppinsjr/gravity-forms-booking-manager/releases/latest` every 12 hours.
+The plugin checks `https://github.com/duppinstech/gravity-forms-booking-manager/releases/latest` every 12 hours.
 
 1. Create a [GitHub Release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) with a tag (e.g. `v0.2.0`).
 2. Attach a zip built with the script below as a release **asset** (required — WordPress cannot use the auto-generated source zip reliably).
@@ -101,7 +101,7 @@ Output: `release/gravity-forms-booking-manager.zip` (gitignored). Upload that fi
 ## Development
 
 ```bash
-git clone https://github.com/oduppinsjr/gravity-forms-booking-manager.git
+git clone https://github.com/duppinstech/gravity-forms-booking-manager.git
 cd gravity-forms-booking-manager
 ```
 

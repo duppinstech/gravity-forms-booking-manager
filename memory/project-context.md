@@ -1,6 +1,6 @@
 # Project context
 
-Gravity Forms Booking Manager, version 0.4.0. Owner: Odell Duppins / Duppins Technology (https://duppinstech.com). Repository: https://github.com/oduppinsjr/gravity-forms-booking-manager. No outside client. See `OWNERSHIP.md`.
+Gravity Forms Booking Manager, version 0.4.0. Owner: Odell Duppins / Duppins Technology (https://duppinstech.com). Repository: https://github.com/duppinstech/gravity-forms-booking-manager. No outside client. See `OWNERSHIP.md`.
 
 ## Runtime
 

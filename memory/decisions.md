@@ -26,7 +26,7 @@ Settled choices. Change one only by editing this file in the same change that ch
 - Checkout locks use options named `gfbm_lock_*` and expire after 120 seconds.
 - Cancel and reschedule for staff are on **Forms → Bookings**. Cancel trashes the entry. Visitors are not given a self-service cancel page.
 - Entry data survives uninstall. Uninstall deletes lock options only.
-- Updates ship as a zip asset on GitHub Releases, repo `oduppinsjr/gravity-forms-booking-manager`.
+- Updates ship as a zip asset on GitHub Releases, repo `duppinstech/gravity-forms-booking-manager`.
 - Update requests send the plugin name and WordPress version. They do not send the site URL.
 - Security reports go to support@duppinstech.com and to GitHub private vulnerability reporting.
 

@@ -17,7 +17,7 @@ agreement signed by Odell Duppins says otherwise.
 ## Repository
 
 - **Product:** Gravity Forms Booking Manager
-- **GitHub:** https://github.com/oduppinsjr/gravity-forms-booking-manager
+- **GitHub:** https://github.com/duppinstech/gravity-forms-booking-manager
 - **Plugin header `Author`:** Duppins Technology
 - **Distribution license:** GPL-2.0-or-later (see `LICENSE`)
 
