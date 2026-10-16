@@ -1,0 +1,385 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gravity Forms Booking Manager 0.4.0\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: gravity-forms-booking-manager\n"
+
+#: includes/class-gfbm-form-editor.php:383
+msgid "1 day"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:379
+msgid "1 hour"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:368
+msgid "10 minutes"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:391
+msgid "14 days"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:369
+msgid "15 minutes"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:395
+msgid "180 days"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:384
+msgid "2 days"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:380
+msgid "2 hours"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:392
+msgid "30 days"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:370
+#: includes/class-gfbm-form-editor.php:378
+msgid "30 minutes"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:396
+msgid "365 days"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:381
+msgid "4 hours"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:371
+msgid "45 minutes"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:367
+msgid "5 minutes"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:393
+msgid "60 days"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:372
+msgid "60 minutes"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:390
+msgid "7 days"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:382
+msgid "8 hours"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:394
+msgid "90 days"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:426
+msgid "Add blocked time"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:138
+#: includes/class-gfbm-form-editor.php:252
+msgid "All days"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:242
+msgid "Apply Monday to:"
+msgstr ""
+
+#: includes/class-gf-booking-manager-field.php:132
+msgid "Appointment Date"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:334
+msgid "Appointment Length / Slot Interval"
+msgstr ""
+
+#: includes/class-gf-booking-manager-field.php:137
+msgid "Appointment Time"
+msgstr ""
+
+#: includes/class-gfbm-admin.php:48
+msgid "Appointment cancelled. The entry is in the trash."
+msgstr ""
+
+#: includes/class-gfbm-admin.php:46
+msgid "Appointment rescheduled."
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:484
+msgid "Auto Responsive"
+msgstr ""
+
+#: includes/class-gf-booking-manager-field.php:248
+#: includes/class-gf-booking-manager.php:153
+msgid "Available times"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:442
+msgid "Blackout Dates"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:414
+msgid "Block time ranges on specific days or all days."
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:406
+msgid "Blocked Times"
+msgstr ""
+
+#: includes/class-gf-booking-manager-field.php:33
+msgid "Booking Manager"
+msgstr ""
+
+#: includes/class-gf-booking-manager-field.php:165
+msgid "Booking calendar and available time slots will appear here."
+msgstr ""
+
+#: includes/class-gfbm-admin.php:25
+#: includes/class-gfbm-admin.php:26
+#: includes/class-gfbm-admin.php:42
+msgid "Bookings"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:364
+msgid "Buffer after each appointment"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:234
+msgid "Business Hours"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:399
+msgid "Business hours use the timezone in WordPress Settings → General. This field does not have its own timezone."
+msgstr ""
+
+#: includes/class-gfbm-admin.php:96
+msgid "Cancel"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:361
+msgid "Capacity per slot"
+msgstr ""
+
+#: includes/class-gf-booking-manager-field.php:249
+msgid "Choose a date to view available times."
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:450
+msgid "Click dates on the calendar to block them from booking."
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:136
+#: includes/class-gfbm-helpers.php:70
+msgid "Closed"
+msgstr ""
+
+#: includes/class-gfbm-admin.php:56
+msgid "Date"
+msgstr ""
+
+#: includes/class-gfbm-admin.php:52
+msgid "Enter a valid date and time."
+msgstr ""
+
+#: includes/class-gfbm-admin.php:59
+msgid "Entry"
+msgstr ""
+
+#: includes/class-gfbm-admin.php:58
+msgid "Form"
+msgstr ""
+
+#: includes/class-gfbm-helpers.php:26
+msgid "Fri"
+msgstr ""
+
+#: includes/class-gfbm-helpers.php:14
+msgid "Friday"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:542
+msgid "Height in pixels before the time-slot list scrolls."
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:387
+msgid "How far ahead visitors can book"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:476
+msgid "Layout"
+msgstr ""
+
+#: includes/class-gf-booking-manager.php:150
+msgid "Loading available times..."
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:375
+msgid "Minimum notice"
+msgstr ""
+
+#: includes/class-gfbm-helpers.php:22
+msgid "Mon"
+msgstr ""
+
+#: includes/class-gfbm-helpers.php:10
+msgid "Monday"
+msgstr ""
+
+#: includes/class-gf-booking-manager.php:151
+msgid "No available times for this date."
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:389
+msgid "No limit"
+msgstr ""
+
+#: includes/class-gfbm-admin.php:64
+msgid "No upcoming bookings."
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:366
+#: includes/class-gfbm-form-editor.php:377
+msgid "None"
+msgstr ""
+
+#: includes/class-gf-booking-manager-field.php:121
+#: includes/class-gf-booking-manager.php:692
+msgid "Please select an appointment date and time."
+msgstr ""
+
+#: includes/class-gf-booking-manager.php:705
+msgid "Please select an available appointment time."
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:142
+msgid "Remove"
+msgstr ""
+
+#: includes/class-gfbm-admin.php:60
+msgid "Reschedule"
+msgstr ""
+
+#: includes/class-gfbm-helpers.php:27
+msgid "Sat"
+msgstr ""
+
+#: includes/class-gfbm-helpers.php:15
+msgid "Saturday"
+msgstr ""
+
+#: includes/class-gfbm-admin.php:86
+msgid "Save"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:132
+msgid "Schedule Appointment"
+msgstr ""
+
+#: includes/class-gfbm-helpers.php:90
+msgid "Select"
+msgstr ""
+
+#: includes/class-gf-booking-manager-field.php:243
+msgid "Select appointment date"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:482
+msgid "Side by Side (50/50)"
+msgstr ""
+
+#: includes/class-gf-booking-manager.php:715
+msgid "Sorry, this time slot was just booked. Please choose another time."
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:486
+msgid "Stacked"
+msgstr ""
+
+#: includes/class-gfbm-helpers.php:28
+msgid "Sun"
+msgstr ""
+
+#: includes/class-gfbm-helpers.php:16
+msgid "Sunday"
+msgstr ""
+
+#: includes/class-gfbm-admin.php:50
+msgid "That time is not available."
+msgstr ""
+
+#: includes/class-gfbm-helpers.php:25
+msgid "Thu"
+msgstr ""
+
+#: includes/class-gfbm-helpers.php:13
+msgid "Thursday"
+msgstr ""
+
+#: includes/class-gfbm-admin.php:57
+msgid "Time"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:496
+msgid "Time Slot Columns"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:516
+msgid "Time Slot Max Height"
+msgstr ""
+
+#: includes/class-gfbm-helpers.php:23
+msgid "Tue"
+msgstr ""
+
+#: includes/class-gfbm-helpers.php:11
+msgid "Tuesday"
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:246
+msgid "Tue–Fri"
+msgstr ""
+
+#: includes/class-gf-booking-manager.php:152
+msgid "Unable to load available times. Please try again."
+msgstr ""
+
+#: includes/class-gfbm-admin.php:43
+msgid "Upcoming appointments stored on Gravity Forms entries. Hours use the timezone in Settings → General. Cancel sends the entry to the trash, which frees the slot. Reschedule checks capacity, buffers, and the booking window before it saves."
+msgstr ""
+
+#: includes/class-gfbm-helpers.php:24
+msgid "Wed"
+msgstr ""
+
+#: includes/class-gfbm-helpers.php:12
+msgid "Wednesday"
+msgstr ""
+
+#: includes/class-gfbm-admin.php:128
+msgid "You do not have permission to cancel bookings."
+msgstr ""
+
+#: includes/class-gfbm-admin.php:109
+msgid "You do not have permission to change bookings."
+msgstr ""
+
+#: includes/class-gfbm-admin.php:35
+msgid "You do not have permission to view bookings."
+msgstr ""
+
+#: includes/class-gfbm-form-editor.php:140
+#: includes/class-gfbm-form-editor.php:296
+msgid "to"
+msgstr ""

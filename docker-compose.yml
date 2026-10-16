@@ -1,0 +1,29 @@
+# Local WordPress. Passwords are for this machine only.
+# Gravity Forms is not included. Copy a licensed Gravity Forms plugin into
+# wp-content/plugins on the running site before you can exercise the field.
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+      MYSQL_ROOT_PASSWORD: wordpress
+    ports:
+      - "33060:3306"
+  wordpress:
+    image: wordpress:6.7-php8.2-apache
+    depends_on:
+      - db
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - wordpress:/var/www/html
+      - ./:/var/www/html/wp-content/plugins/gravity-forms-booking-manager
+volumes:
+  wordpress:

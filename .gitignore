@@ -1,0 +1,27 @@
+# Release / local install packages
+*.zip
+dist/
+build/
+release/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# Logs and env
+*.log
+.env
+.env.*
+
+# Dependencies (if added later)
+node_modules/
+/vendor/
+
+# Claude Code personal overrides. Never commit.
+CLAUDE.local.md
+.claude/settings.local.json

@@ -1,0 +1,410 @@
+.gfbm-field {
+  width: 100%;
+  max-width: 100%;
+  container-type: inline-size;
+}
+
+.gfbm-layout-inner {
+  display: grid;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.gfbm-layout-inner,
+.gfbm-layout-auto .gfbm-layout-inner,
+.gfbm-layout-side-by-side .gfbm-layout-inner {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.gfbm-layout-stacked .gfbm-layout-inner {
+  grid-template-columns: 1fr;
+}
+
+.gfbm-calendar-wrap,
+.gfbm-slots-wrap {
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.gfbm-calendar-wrap {
+  position: relative;
+  z-index: 1;
+  align-self: stretch;
+  overflow: visible;
+}
+
+/* Flatpickr wrapper — fill the 50% column */
+.gfbm-calendar-wrap .flatpickr-wrapper,
+.gfbm-calendar-wrap .flatpickr-calendar.inline {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100% !important;
+  max-width: 100%;
+  align-self: stretch;
+  box-sizing: border-box;
+  box-shadow: none;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+}
+
+.gfbm-calendar-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.gfbm-field .flatpickr-months,
+.gfbm-field .flatpickr-month,
+.gfbm-field .flatpickr-weekdays,
+.gfbm-field .flatpickr-weekdaycontainer,
+.gfbm-field .flatpickr-rContainer,
+.gfbm-field .flatpickr-days,
+.gfbm-field .dayContainer {
+  width: 100% !important;
+  max-width: 100%;
+  min-width: 0 !important;
+  box-sizing: border-box;
+}
+
+.gfbm-field .flatpickr-days {
+  overflow: visible;
+}
+
+.gfbm-field .dayContainer {
+  display: flex !important;
+  flex-wrap: wrap;
+  width: 100% !important;
+  min-width: 0 !important;
+  justify-content: flex-start;
+}
+
+.gfbm-field .flatpickr-day {
+  flex: 1 0 calc(100% / 7);
+  width: calc(100% / 7) !important;
+  max-width: calc(100% / 7) !important;
+  height: 40px;
+  line-height: 40px;
+  box-sizing: border-box;
+}
+
+.gfbm-field .flatpickr-day:not(.flatpickr-disabled) {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.gfbm-field .flatpickr-months .flatpickr-month {
+  height: auto;
+}
+
+.gfbm-field .flatpickr-current-month {
+  left: 0;
+  width: 100%;
+  padding: 6px 0;
+}
+
+.gfbm-slots-wrap {
+  align-self: stretch;
+  min-height: 0;
+}
+
+.gfbm-slots {
+  display: grid;
+  grid-template-columns: repeat(var(--gfbm-slot-columns, 2), minmax(0, 1fr));
+  grid-auto-rows: min-content;
+  align-content: start;
+  gap: 8px;
+  flex: 1 1 auto;
+  height: 100%;
+  min-height: 0;
+  max-height: none;
+  overflow-y: auto;
+  padding-right: 4px;
+  box-sizing: border-box;
+}
+
+.gfbm-layout-stacked .gfbm-slots {
+  height: auto;
+  max-height: var(--gfbm-slot-max-height, 320px);
+}
+
+.gfbm-slot {
+  width: 100%;
+  border: 1px solid #cccccc;
+  background: #ffffff;
+  padding: 9px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1.2;
+  text-align: center;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.gfbm-slot:hover {
+  border-color: #222222;
+}
+
+.gfbm-slot:focus-visible {
+  outline: 2px solid #222222;
+  outline-offset: 2px;
+}
+
+.gfbm-slot.is-selected {
+  background: #222222;
+  border-color: #222222;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.gfbm-message {
+  margin: 0;
+  color: #666666;
+}
+
+.gfbm-editor-preview {
+  padding: 16px;
+  border: 1px dashed #cccccc;
+  border-radius: 6px;
+  background: #f8f8f8;
+  color: #555555;
+}
+
+@container (max-width: 640px) {
+  .gfbm-layout-auto .gfbm-layout-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@container (max-width: 380px) {
+  .gfbm-slots {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Gravity Forms editor — compact business hours */
+.gfbm-editor-apply-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+  margin: 0 0 8px;
+  font-size: 11px;
+}
+
+.gfbm-editor-apply-row .button {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.4;
+  min-height: 0;
+  padding: 2px 8px;
+}
+
+.gfbm-editor-business-hours {
+  display: grid;
+  gap: 4px;
+}
+
+.gfbm-editor-day-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.gfbm-editor-day-name {
+  flex: 0 0 32px;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.gfbm-editor-hours-inline {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  align-items: center;
+  gap: 4px;
+}
+
+.gfbm-editor-hours-inline select,
+.gfbm-editor-block-row select {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: none;
+  width: auto;
+  font-size: 11px;
+  padding: 2px 18px 2px 4px;
+  height: auto;
+  line-height: 1.3;
+}
+
+.gfbm-editor-sep {
+  flex: 0 0 auto;
+  font-size: 10px;
+  color: #646970;
+  white-space: nowrap;
+}
+
+.gfbm-editor-day-row.is-closed .gfbm-editor-hours-inline {
+  opacity: 0.85;
+}
+
+.gfbm-editor-collapsible {
+  margin-top: 4px;
+  border: 1px solid #dcdcde;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.gfbm-editor-collapsible summary {
+  cursor: pointer;
+  padding: 8px 10px;
+  font-weight: 600;
+  list-style: none;
+}
+
+.gfbm-editor-collapsible summary::-webkit-details-marker {
+  display: none;
+}
+
+.gfbm-editor-collapsible summary::before {
+  content: "▸ ";
+  display: inline-block;
+  width: 1em;
+}
+
+.gfbm-editor-collapsible[open] summary::before {
+  content: "▾ ";
+}
+
+.gfbm-editor-collapsible-body {
+  padding: 0 10px 10px;
+}
+
+.gfbm-editor-block-list {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.gfbm-editor-block-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+}
+
+.gfbm-editor-block-row .gfbm-block-day {
+  flex: 0 0 72px;
+  min-width: 72px;
+}
+
+.gfbm-remove-block,
+.gfbm-remove-blackout {
+  flex: 0 0 auto;
+  border: 0;
+  background: transparent;
+  color: #b32d2e;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0 2px;
+}
+
+.gfbm-editor-blackout-picker-wrap .flatpickr-calendar.inline {
+  box-shadow: none;
+  border: 1px solid #dcdcde;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.gfbm-blackout-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.gfbm-editor-blackout-picker-wrap {
+  position: relative;
+  min-height: 280px;
+}
+
+.gfbm-blackout-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gfbm-blackout-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #f0f0f1;
+  font-size: 12px;
+}
+
+.gfbm-editor-sub-label {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Keep side-by-side layout in GF field sidebar context */
+#field_settings li.gfbm_business_hours_setting .gfbm-editor-day-row {
+  display: flex !important;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
+}
+
+#field_settings li.gfbm_business_hours_setting .gfbm-editor-day-name {
+  flex: 0 0 32px;
+}
+
+#field_settings li.gfbm_business_hours_setting .gfbm-editor-hours-inline {
+  display: flex !important;
+  flex: 1 1 auto;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+}
+
+#field_settings li.gfbm_business_hours_setting .gfbm-editor-hours-inline select.gfbm-day-open,
+#field_settings li.gfbm_business_hours_setting .gfbm-editor-hours-inline select.gfbm-day-close {
+  width: auto !important;
+  max-width: calc(50% - 10px) !important;
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+  display: inline-block !important;
+  box-sizing: border-box;
+}
+
+#field_settings li.gfbm_business_hours_setting .gfbm-editor-sep {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+#field_settings .gfbm-editor-block-row select {
+  width: auto !important;
+  max-width: none !important;
+}
