@@ -44,6 +44,108 @@
     return fallback;
   }
 
+  function fill(template, values) {
+    return String(template).replace(/\{(\w+)\}/g, function (match, key) {
+      return Object.prototype.hasOwnProperty.call(values, key) ? values[key] : match;
+    });
+  }
+
+  function formatLongDate(dateStr) {
+    var parts = String(dateStr).split('-');
+    var date = new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]));
+
+    if (isNaN(date.getTime())) {
+      return dateStr;
+    }
+
+    try {
+      return new Intl.DateTimeFormat(undefined, {
+        weekday: 'long',
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric'
+      }).format(date);
+    } catch (e) {
+      return dateStr;
+    }
+  }
+
+  function updateSelection(field) {
+    var summary = field.querySelector('.gfbm-selection');
+    var dateInput = field.querySelector('.gfbm-date-input');
+    var timeInput = field.querySelector('.gfbm-time-input');
+
+    if (!summary || !dateInput || !timeInput) {
+      return;
+    }
+
+    if (dateInput.value && timeInput.value) {
+      summary.textContent = fill(t('dateTime', 'You are selecting a booking for {date} at {time}. Click Submit to request this time.'), {
+        date: formatLongDate(dateInput.value),
+        time: formatTimeLabel(timeInput.value)
+      });
+      return;
+    }
+
+    if (dateInput.value) {
+      summary.textContent = fill(t('dateOnly', 'You are selecting {date}. Choose a time, then click Submit to request this booking.'), {
+        date: formatLongDate(dateInput.value)
+      });
+      return;
+    }
+
+    summary.textContent = t('choose', 'Choose a date and time. Click Submit to request the booking.');
+  }
+
+  function mountYearSelect(instance) {
+    var month = instance.calendarContainer.querySelector('.flatpickr-current-month');
+    var wrapper = month && month.querySelector('.numInputWrapper');
+    var input = wrapper && wrapper.querySelector('input.cur-year');
+
+    if (!month || !wrapper || !input) {
+      return;
+    }
+
+    var select = wrapper.querySelector('.gfbm-year-select');
+
+    if (!select) {
+      var minYear = instance.config.minDate ? instance.config.minDate.getFullYear() : instance.currentYear;
+      var maxYear = instance.config.maxDate ? instance.config.maxDate.getFullYear() : minYear + 5;
+
+      if (maxYear < minYear) {
+        maxYear = minYear;
+      }
+
+      select = document.createElement('select');
+      select.className = 'gfbm-year-select';
+      select.setAttribute('aria-label', t('year', 'Year'));
+
+      var year;
+      for (year = minYear; year <= maxYear; year += 1) {
+        var option = document.createElement('option');
+        option.value = String(year);
+        option.textContent = String(year);
+        select.appendChild(option);
+      }
+
+      input.setAttribute('tabindex', '-1');
+      input.setAttribute('aria-hidden', 'true');
+      wrapper.insertBefore(select, input);
+
+      select.addEventListener('change', function () {
+        var nextYear = parseInt(select.value, 10);
+
+        if (!isNaN(nextYear) && nextYear !== instance.currentYear) {
+          instance.changeYear(nextYear);
+        }
+      });
+    }
+
+    if (select.value !== String(instance.currentYear)) {
+      select.value = String(instance.currentYear);
+    }
+  }
+
   function setMessage(slotsWrap, message) {
     slotsWrap.innerHTML = '';
     var note = document.createElement('p');
@@ -123,6 +225,7 @@
 
     dateInput.value = dateStr;
     timeInput.value = '';
+    updateSelection(field);
 
     setMessage(slotsWrap, t('loading', 'Loading available times...'));
 
@@ -183,6 +286,7 @@
             button.classList.add('is-selected');
             button.setAttribute('aria-pressed', 'true');
             timeInput.value = slot;
+            updateSelection(field);
           });
 
           slotsWrap.appendChild(button);
@@ -264,20 +368,25 @@
         dateInput.value = dateStr;
         loadSlots(field, dateStr);
       },
-      onReady: function () {
+      onReady: function (selectedDates, dateStr, instance) {
+        mountYearSelect(instance);
         scheduleHeightSync(field);
         observeFieldResize(field);
       },
-      onMonthChange: function () {
+      onMonthChange: function (selectedDates, dateStr, instance) {
+        mountYearSelect(instance);
         scheduleHeightSync(field);
       },
-      onYearChange: function () {
+      onYearChange: function (selectedDates, dateStr, instance) {
+        mountYearSelect(instance);
         scheduleHeightSync(field);
       }
     });
 
     scheduleHeightSync(field);
     observeFieldResize(field);
+
+    updateSelection(field);
 
     if (dateInput.value) {
       loadSlots(field, dateInput.value);
@@ -289,7 +398,7 @@
   }
 
   function scheduleInit() {
-    window.requestAnimationFrame(initAllBookingManagerFields);
+    initAllBookingManagerFields();
   }
 
   if (document.readyState === 'loading') {

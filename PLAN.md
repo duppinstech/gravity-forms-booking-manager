@@ -58,12 +58,19 @@ Status: done. Decided 2026-10-15: no charge today, public repository stays, a fu
 
 ## Phase 5 — Release of 0.4.0
 
-Status: in progress. The zip can be built locally. Publishing the GitHub Release waits for you.
+Status: done. Published 2026-10-16 as GitHub release `v0.4.0` on `duppinstech/gravity-forms-booking-manager`.
 
 - [x] Version `0.4.0` in the plugin header and `GFBM_VERSION`.
 - [x] `scripts/build-release.ps1` adds the runtime docs and `uninstall.php`. SDLC files and `OWNERSHIP.md` stay out of the zip.
-- [ ] Attach the zip to a GitHub Release when you ask for a publish.
+- [x] The installable zip is attached to the `v0.4.0` GitHub Release.
 - [x] Department verdicts recorded in `reports/DEPARTMENT-REVIEW.md` and `memory/progress.md`.
+
+## Field layout 0.4.1
+
+Status: on main. Not a GitHub Release yet, so the updater still serves 0.4.0.
+
+- [x] Compact calendar, year dropdown beside the month, slot spacing, and a selection line.
+- [ ] GitHub release `v0.4.1` when asked.
 
 ## Testing with Docker
 

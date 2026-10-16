@@ -206,7 +206,7 @@ class GF_Booking_Manager_Field extends GF_Field {
         ob_start();
         ?>
         <div
-            class="gfbm-field gfbm-layout-<?php echo esc_attr($layout); ?>"
+            class="gfbm-field gfbm-layout-<?php echo esc_attr($layout); ?> gform-theme__disable-framework gform-theme__no-reset--children"
             data-form-id="<?php echo esc_attr($form_id); ?>"
             data-field-id="<?php echo esc_attr($field_id); ?>"
             data-blackout-dates="<?php echo esc_attr(wp_json_encode($blackout_dates)); ?>"
@@ -250,6 +250,7 @@ class GF_Booking_Manager_Field extends GF_Field {
                     </div>
                 </div>
             </div>
+            <p class="gfbm-selection" aria-live="polite"><?php esc_html_e('Choose a date and time. Click Submit to request the booking.', 'gravity-forms-booking-manager'); ?></p>
         </div>
         <?php
 

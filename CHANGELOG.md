@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.1
+
+- The calendar stays a compact month. The selected day is one cell, and the month and year sit together in the header.
+- The year is a dropdown of the years the field allows. A short booking window still only lists those years.
+- Time slots keep their own spacing and button style when a theme styles buttons.
+- A line under the field states the date and time and says to click Submit.
+
 ## 0.4.0
 
 - Slot checks page through matching entries instead of stopping at 1,000.

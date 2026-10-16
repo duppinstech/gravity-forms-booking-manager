@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Gravity Forms Booking Manager 0.4.0\n"
+"Project-Id-Version: Gravity Forms Booking Manager 0.4.1\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -172,6 +172,11 @@ msgstr ""
 msgid "Capacity per slot"
 msgstr ""
 
+#: includes/class-gf-booking-manager-field.php:253
+#: includes/class-gf-booking-manager.php:155
+msgid "Choose a date and time. Click Submit to request the booking."
+msgstr ""
+
 #: includes/class-gf-booking-manager-field.php:249
 msgid "Choose a date to view available times."
 msgstr ""
@@ -255,11 +260,11 @@ msgid "None"
 msgstr ""
 
 #: includes/class-gf-booking-manager-field.php:121
-#: includes/class-gf-booking-manager.php:692
+#: includes/class-gf-booking-manager.php:696
 msgid "Please select an appointment date and time."
 msgstr ""
 
-#: includes/class-gf-booking-manager.php:705
+#: includes/class-gf-booking-manager.php:709
 msgid "Please select an available appointment time."
 msgstr ""
 
@@ -299,7 +304,7 @@ msgstr ""
 msgid "Side by Side (50/50)"
 msgstr ""
 
-#: includes/class-gf-booking-manager.php:715
+#: includes/class-gf-booking-manager.php:719
 msgid "Sorry, this time slot was just booked. Please choose another time."
 msgstr ""
 
@@ -365,6 +370,18 @@ msgstr ""
 
 #: includes/class-gfbm-helpers.php:12
 msgid "Wednesday"
+msgstr ""
+
+#: includes/class-gf-booking-manager.php:154
+msgid "Year"
+msgstr ""
+
+#: includes/class-gf-booking-manager.php:157
+msgid "You are selecting a booking for {date} at {time}. Click Submit to request this time."
+msgstr ""
+
+#: includes/class-gf-booking-manager.php:156
+msgid "You are selecting {date}. Choose a time, then click Submit to request this booking."
 msgstr ""
 
 #: includes/class-gfbm-admin.php:128

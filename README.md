@@ -55,6 +55,8 @@ In **Settings → Notifications**, use the merge tag picker and expand the Booki
 - **Auto Responsive** — 50/50 until the field is narrow, then stacks.
 - **Stacked** — calendar above slots.
 
+After a date and time are chosen, a line under the field states that selection and says to click Submit. It does not submit the form by itself.
+
 ## Scheduling rules
 
 On the field, under the appointment length:
@@ -62,7 +64,7 @@ On the field, under the appointment length:
 - **Capacity per slot** — how many active entries may share one time. Default 1. Maximum 20.
 - **Buffer** — minutes required between the end of one appointment and the start of the next. Default none.
 - **Minimum notice** — how soon a visitor may book, measured from now. Default none.
-- **How far ahead** — the last day someone may book. Default no limit.
+- **How far ahead** — the last day someone may book. Default no limit. The year dropdown lists only the years inside that window. With no limit, it lists the first bookable year and the five years after it.
 
 Hours use the timezone in **Settings → General**. The field does not set a second timezone.
 

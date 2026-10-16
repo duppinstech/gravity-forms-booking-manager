@@ -151,6 +151,10 @@ class GF_Booking_Manager {
                 'none'     => __('No available times for this date.', 'gravity-forms-booking-manager'),
                 'error'    => __('Unable to load available times. Please try again.', 'gravity-forms-booking-manager'),
                 'times'    => __('Available times', 'gravity-forms-booking-manager'),
+                'year'     => __('Year', 'gravity-forms-booking-manager'),
+                'choose'   => __('Choose a date and time. Click Submit to request the booking.', 'gravity-forms-booking-manager'),
+                'dateOnly' => __('You are selecting {date}. Choose a time, then click Submit to request this booking.', 'gravity-forms-booking-manager'),
+                'dateTime' => __('You are selecting a booking for {date} at {time}. Click Submit to request this time.', 'gravity-forms-booking-manager'),
             ],
         ]);
     }

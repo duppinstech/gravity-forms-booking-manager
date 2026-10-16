@@ -12,15 +12,16 @@ Security runs on the original diff, after every later stage that edits files, an
 | 2 | `agents/qa-reviewer.md` | What evidence shows the behavior works? |
 | 3 | `agents/product-reviewer.md` | Does this match `INTENT.md` without scope creep? |
 | 4 | `agents/accessibility-reviewer.md` | Can a keyboard and a screen reader use what changed? |
-| 5 | `agents/privacy-reviewer.md` | Did booking data, disclosure, or the updater change? |
-| 6 | `agents/legal-reviewer.md` | Do license, copyright, notices, and disclaimers still match `OWNERSHIP.md`? |
-| 7 | `agents/finance-reviewer.md` | Did anyone state or imply a price Odell Duppins did not set? |
-| 8 | `agents/support-reviewer.md` | Can a site owner follow the docs after this change? |
-| 9 | `agents/marketing-reviewer.md` | Do public claims match what the plugin actually does? |
-| 10 | `agents/release-reviewer.md` | If this ships, do version, zip, and changelog agree? |
-| 11 | `agents/security-reviewer.md` | Final pass on the whole diff, including department edits. |
+| 5 | `agents/ui-layout-reviewer.md` | Do the calendar, slots, and selection line sit cleanly on the page? |
+| 6 | `agents/privacy-reviewer.md` | Did booking data, disclosure, or the updater change? |
+| 7 | `agents/legal-reviewer.md` | Do license, copyright, notices, and disclaimers still match `OWNERSHIP.md`? |
+| 8 | `agents/finance-reviewer.md` | Did anyone state or imply a price Odell Duppins did not set? |
+| 9 | `agents/support-reviewer.md` | Can a site owner follow the docs after this change? |
+| 10 | `agents/marketing-reviewer.md` | Do public claims match what the plugin actually does? |
+| 11 | `agents/release-reviewer.md` | If this ships, do version, zip, and changelog agree? |
+| 12 | `agents/security-reviewer.md` | Final pass on the whole diff, including department edits. |
 
-After each of steps 2 through 10, if that agent edited files, run `agents/security-reviewer.md` on those edits before the next department.
+After each of steps 2 through 11, if that agent edited files, run `agents/security-reviewer.md` on those edits before the next department.
 
 ## Stop rules
 

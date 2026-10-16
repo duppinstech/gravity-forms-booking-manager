@@ -25,12 +25,13 @@ Run these after development, in this order, using `workflows/department-review.m
 | 1 | Quality | `agents/qa-reviewer.md` | Behavior, regressions, test evidence. |
 | 2 | Product | `agents/product-reviewer.md` | Fit with `INTENT.md` and `PLAN.md`. |
 | 3 | Accessibility | `agents/accessibility-reviewer.md` | Keyboard, names, contrast, announcements. |
-| 4 | Privacy | `agents/privacy-reviewer.md` | Booking data, disclosure, retention. |
-| 5 | Legal | `agents/legal-reviewer.md` | License, copyright, disclaimers, notices. |
-| 6 | Finance | `agents/finance-reviewer.md` | Pricing, packaging, paid vs free. |
-| 7 | Support | `agents/support-reviewer.md` | Docs and admin copy a site owner can follow. |
-| 8 | Marketing | `agents/marketing-reviewer.md` | Public claims and release-note language. |
-| 9 | Release | `agents/release-reviewer.md` | Version, zip, updater, changelog. |
+| 4 | Interface | `agents/ui-layout-reviewer.md` | Calendar, time slots, spacing, and the selection line. |
+| 5 | Privacy | `agents/privacy-reviewer.md` | Booking data, disclosure, retention. |
+| 6 | Legal | `agents/legal-reviewer.md` | License, copyright, disclaimers, notices. |
+| 7 | Finance | `agents/finance-reviewer.md` | Pricing, packaging, paid vs free. |
+| 8 | Support | `agents/support-reviewer.md` | Docs and admin copy a site owner can follow. |
+| 9 | Marketing | `agents/marketing-reviewer.md` | Public claims and release-note language. |
+| 10 | Release | `agents/release-reviewer.md` | Version, zip, updater, changelog. |
 
 ## How to invoke
 

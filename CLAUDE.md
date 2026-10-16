@@ -1,6 +1,6 @@
 # Gravity Forms Booking Manager
 
-WordPress plugin that adds a Booking Manager field to Gravity Forms. Version is `GFBM_VERSION` in `gravity-forms-booking-manager.php` (0.3.7).
+WordPress plugin that adds a Booking Manager field to Gravity Forms. Version is `GFBM_VERSION` in `gravity-forms-booking-manager.php` (0.4.1).
 
 Author and copyright owner: Odell Duppins / Duppins Technology (https://duppinstech.com). Read `OWNERSHIP.md` before any copyright, license, credit, or pricing edit.
 
@@ -9,7 +9,7 @@ Author and copyright owner: Odell Duppins / Duppins Technology (https://duppinst
 - PHP 7.4+, WordPress 6.0+, Gravity Forms
 - Field, validation, and slots: `includes/`
 - Front end: `assets/js/booking-manager.js`, `assets/css/booking-manager.css`
-- Calendar library: Flatpickr from jsDelivr
+- Calendar library: Flatpickr 4.6.13 in `assets/vendor/flatpickr`
 - Release zip: `scripts/build-release.ps1`
 - Updates: GitHub Releases via `includes/class-gfbm-updater.php`
 - Distribution license: GPL-2.0-or-later
@@ -48,4 +48,4 @@ Claude Code loads copies under `.claude/agents`, `.claude/commands`, `.claude/sk
 
 ## Current behavior
 
-Visitors pick a date and an open time. One active entry holds that slot for that form and field. Business hours, duration, blocked times, blackout dates, and layout are field settings. Date and time are entry inputs `{id}.1` and `{id}.2`.
+Visitors pick a date and an open time. A line under the field states that selection. One active entry holds that slot for that form and field. Business hours, duration, blocked times, blackout dates, and layout are field settings. Date and time are entry inputs `{id}.1` and `{id}.2`.
