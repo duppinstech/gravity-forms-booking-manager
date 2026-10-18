@@ -1,3 +1,5 @@
+@AGENTS.md
+
 # Gravity Forms Booking Manager
 
 WordPress plugin that adds a Booking Manager field to Gravity Forms. Version is `GFBM_VERSION` in `gravity-forms-booking-manager.php` (0.4.1).
