@@ -5,11 +5,13 @@
  * Description: Adds an inline booking calendar and available time slots field to Gravity Forms.
  * Version: 0.4.1
  * Author: Duppins Technology
+ * Author URI: https://duppinstech.com
  * License: GPL-2.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: gravity-forms-booking-manager
  * Requires at least: 6.0
  * Requires PHP: 7.4
+ * Update URI: https://github.com/duppinstech/gravity-forms-booking-manager
  */
 
 if (!defined('ABSPATH')) {
@@ -20,7 +22,18 @@ define('GFBM_VERSION', '0.4.1');
 define('GFBM_FILE', __FILE__);
 define('GFBM_PATH', plugin_dir_path(__FILE__));
 define('GFBM_URL', plugin_dir_url(__FILE__));
-define('GFBM_GITHUB_REPO', 'duppinstech/gravity-forms-booking-manager');
+
+require_once GFBM_PATH . 'includes/class-gfbm-github-updater.php';
+
+GFBM_GitHub_Updater::boot(
+    [
+        'file'    => GFBM_FILE,
+        'version' => GFBM_VERSION,
+        'owner'   => 'duppinstech',
+        'repo'    => 'gravity-forms-booking-manager',
+        'prefix'  => 'gfbm',
+    ]
+);
 
 add_action('gform_loaded', ['GF_Booking_Manager_Bootstrap', 'load'], 5);
 
@@ -35,7 +48,6 @@ class GF_Booking_Manager_Bootstrap {
         require_once GFBM_PATH . 'includes/class-gfbm-helpers.php';
         require_once GFBM_PATH . 'includes/class-gf-booking-manager-field.php';
         require_once GFBM_PATH . 'includes/class-gfbm-form-editor.php';
-        require_once GFBM_PATH . 'includes/class-gfbm-updater.php';
         require_once GFBM_PATH . 'includes/class-gfbm-admin.php';
 
         GF_Fields::register(new GF_Booking_Manager_Field());
@@ -44,7 +56,6 @@ class GF_Booking_Manager_Bootstrap {
         GFBM_Form_Editor::init();
 
         if (is_admin()) {
-            new GFBM_Updater(GFBM_FILE, GFBM_VERSION, GFBM_GITHUB_REPO);
             GFBM_Admin::init();
         }
     }

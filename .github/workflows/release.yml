@@ -13,11 +13,36 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "7.4"
+      - name: Verify tag matches plugin version
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag="${GITHUB_REF_NAME#v}"
+          header=$(sed -n 's/^ \* Version:[[:space:]]*//p' gravity-forms-booking-manager.php | tr -d '\r')
+          constant=$(sed -n "s/^define('GFBM_VERSION', '\(.*\)');/\1/p" gravity-forms-booking-manager.php | tr -d '\r')
+          stable=$(sed -n 's/^Stable tag:[[:space:]]*//p' readme.txt | tr -d '\r')
+          echo "tag=$tag header=$header constant=$constant stable=$stable"
+          if [ "$tag" != "$header" ] || [ "$tag" != "$constant" ] || [ "$tag" != "$stable" ]; then
+            echo "::error::Tag v$tag does not match plugin header, GFBM_VERSION, or readme Stable tag."
+            exit 1
+          fi
+      - name: Lint and test before packaging
+        shell: bash
+        run: |
+          set -euo pipefail
+          find . -name '*.php' -not -path './release/*' -print0 | xargs -0 -n1 php -l
+          php tests/run.php
       - name: Build release zip
         shell: pwsh
         run: .\scripts\build-release.ps1
+      - name: Write release notes
+        shell: bash
+        run: bash bin/release-notes.sh "${GITHUB_REF_NAME#v}" gravity-forms-booking-manager.php release-notes.md
       - name: Attach zip to the GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
         shell: pwsh
-        run: gh release create "${{ github.ref_name }}" "release/gravity-forms-booking-manager.zip" --title "${{ github.ref_name }}" --notes "WordPress plugin zip built by scripts/build-release.ps1. See CHANGELOG.md."
+        run: gh release create "${{ github.ref_name }}" "release/gravity-forms-booking-manager.zip" --title "${{ github.ref_name }}" --notes-file release-notes.md
