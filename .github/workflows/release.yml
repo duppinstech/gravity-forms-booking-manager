@@ -1,0 +1,23 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  zip:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build release zip
+        shell: pwsh
+        run: .\scripts\build-release.ps1
+      - name: Attach zip to the GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: pwsh
+        run: gh release create "${{ github.ref_name }}" "release/gravity-forms-booking-manager.zip" --title "${{ github.ref_name }}" --notes "WordPress plugin zip built by scripts/build-release.ps1. See CHANGELOG.md."

@@ -25,3 +25,7 @@ node_modules/
 # Claude Code personal overrides. Never commit.
 CLAUDE.local.md
 .claude/settings.local.json
+.claude/worktrees/
+
+__pycache__/
+.venv/

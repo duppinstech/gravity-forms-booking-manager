@@ -38,3 +38,24 @@ Run these after development, in this order, using `workflows/department-review.m
 - Feature or bugfix: `workflows/feature-build.md` or `workflows/bug-fix.md`, then the department workflow.
 - Review only: `workflows/code-review.md`, then security at minimum.
 - Slash commands: `/review`, `/deploy`, `/scaffold` (see `commands/`).
+
+## Commands
+
+No Composer or npm install. From the repository root:
+
+- Local WordPress: `docker compose up -d`
+- Lint: `docker run --rm -v "${PWD}:/app" -w /app php:7.4-cli sh -c "find . -name '*.php' -not -path './release/*' -print0 | xargs -0 -n1 php -l"`
+- Test: `docker run --rm -v "${PWD}:/app" -w /app php:7.4-cli php tests/run.php`
+- Build: `.\scripts\build-release.ps1`
+
+CI runs the same lint and `php tests/run.php` after `shivammathur/setup-php`.
+
+## Conventions
+
+PHP 7.4. Four-space indent, with the opening brace on the next line for classes and methods. CSS files use two spaces. See `rules/code-style.md`. No formatter is installed. Do not reformat a file as a side effect of another edit.
+
+## Do not touch
+
+- `assets/vendor/flatpickr/`
+- `release/` and any `*.zip`
+- `.env`, `.env.*`, `CLAUDE.local.md`, `.claude/settings.local.json`
