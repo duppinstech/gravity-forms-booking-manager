@@ -4,7 +4,7 @@ Tags: booking, appointments, calendar, scheduling
 Requires at least: 6.0
 Tested up to: 6.7.2
 Requires PHP: 7.4
-Stable tag: 0.4.1
+Stable tag: 0.4.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -83,6 +83,11 @@ There is no charge for this plugin today. The public GitHub repository and its r
 
 == Changelog ==
 
+= 0.4.2 =
+* The plugins screen shows a banner and the description, installation, questions, and changelog from this readme.
+* Sponsor, View details, and Support sit on the plugin row.
+* Updates come from GitHub Releases. WordPress.org cannot replace this plugin.
+
 = 0.4.1 =
 * The calendar stays a compact month. The selected day is one cell, and the month and year sit together in the header.
 * The year is a dropdown of the years the field allows. A short booking window still only lists those years.
@@ -104,6 +109,9 @@ There is no charge for this plugin today. The public GitHub repository and its r
 * Booking Manager field, business hours, blocked times, blackout dates, layouts, merge tags, and GitHub updates.
 
 == Upgrade Notice ==
+
+= 0.4.2 =
+Plugins screen details, sponsor and support links, and GitHub updates.
 
 = 0.4.1 =
 The calendar month stays compact, the year list follows the booking window, and the field states the chosen date and time.

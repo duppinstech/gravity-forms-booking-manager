@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.2]
+
+- The plugins screen shows a banner and the description, installation, questions, and changelog from readme.txt.
+- Sponsor, View details, and Support sit on the plugin row.
+- Updates come from GitHub Releases. WordPress.org cannot replace this plugin.
+
 ## [0.4.1]
 
 - The calendar stays a compact month. The selected day is one cell, and the month and year sit together in the header.

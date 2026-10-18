@@ -35,7 +35,7 @@ ksort($strings);
 $out = [];
 $out[] = 'msgid ""';
 $out[] = 'msgstr ""';
-$out[] = '"Project-Id-Version: Gravity Forms Booking Manager 0.4.1\n"';
+$out[] = '"Project-Id-Version: Gravity Forms Booking Manager 0.4.2\n"';
 $out[] = '"Language: \n"';
 $out[] = '"MIME-Version: 1.0\n"';
 $out[] = '"Content-Type: text/plain; charset=UTF-8\n"';
