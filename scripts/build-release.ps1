@@ -8,6 +8,7 @@ $zipPath = Join-Path $outDir 'gravity-forms-booking-manager.zip'
 
 $include = @(
     'gravity-forms-booking-manager.php',
+    'readme.txt',
     'includes',
     'assets',
     'README.md',
