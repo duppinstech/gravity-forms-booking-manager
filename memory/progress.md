@@ -1,5 +1,22 @@
 # Progress
 
+## 2026-10-17
+
+- SDLC baseline on `chore/sdlc-baseline`. Docs, GitHub config, and Claude settings only. No application code.
+- Lint: `php -l` passed on every PHP file. Slot tests: 11 passed on PHP 7.4 in Docker.
+- Security PASS WITH NOTES: no secrets, auth, or booking paths in the diff. `release.yml` can create a GitHub release when a `v*` tag is pushed. It does not deploy WordPress.
+- Quality skipped: booking behavior did not change. The Docker lint and slot tests above are the check.
+- Product skipped: no change to a booking outcome in `INTENT.md`.
+- Accessibility skipped: no markup or behavior change.
+- Interface skipped: `.editorconfig` records the indent already in the files and does not reindent them.
+- Privacy skipped: entries, AJAX slot data, and the updater were not touched.
+- Legal PASS WITH NOTES: `LICENSE` and copyright headers were not edited. `CONTRIBUTING.md` repeats the existing ownership rule and adds no terms.
+- Finance skipped: no price.
+- Support PASS: the bug template asks for field settings and versions. The feature template asks for an outcome. No support term was added.
+- Marketing skipped: changelog bullets were not rewritten.
+- Release PASS WITH NOTES: no version bump. The new workflow builds `scripts/build-release.ps1` on a version tag.
+- Final security PASS. No BLOCK.
+
 ## 2026-10-16
 
 - Added `agents/ui-layout-reviewer.md` to the department order after accessibility.
