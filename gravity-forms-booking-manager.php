@@ -35,6 +35,17 @@ GFBM_GitHub_Updater::boot(
     ]
 );
 
+require_once GFBM_PATH . 'includes/class-gravity-forms-booking-manager-plugin-info.php';
+
+GFBM_Plugin_Info::boot(
+    [
+        'file'         => GFBM_FILE,
+        'settings_url' => '',
+        'help_url'     => '',
+        'support_url'  => 'mailto:support@duppinstech.com',
+    ]
+);
+
 add_action('gform_loaded', ['GF_Booking_Manager_Bootstrap', 'load'], 5);
 
 class GF_Booking_Manager_Bootstrap {

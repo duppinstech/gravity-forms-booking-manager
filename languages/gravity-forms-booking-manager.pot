@@ -7,6 +7,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Domain: gravity-forms-booking-manager\n"
 
+#: includes/class-gravity-forms-booking-manager-plugin-info.php:452
+msgid "(opens in a new tab)"
+msgstr ""
+
 #: includes/class-gfbm-form-editor.php:383
 msgid "1 day"
 msgstr ""
@@ -218,6 +222,10 @@ msgstr ""
 msgid "Height in pixels before the time-slot list scrolls."
 msgstr ""
 
+#: includes/class-gravity-forms-booking-manager-plugin-info.php:391
+msgid "Help"
+msgstr ""
+
 #: includes/class-gfbm-form-editor.php:387
 msgid "How far ahead visitors can book"
 msgstr ""
@@ -300,12 +308,20 @@ msgstr ""
 msgid "Select appointment date"
 msgstr ""
 
+#: includes/class-gravity-forms-booking-manager-plugin-info.php:388
+msgid "Settings"
+msgstr ""
+
 #: includes/class-gfbm-form-editor.php:482
 msgid "Side by Side (50/50)"
 msgstr ""
 
 #: includes/class-gf-booking-manager.php:719
 msgid "Sorry, this time slot was just booked. Please choose another time."
+msgstr ""
+
+#: includes/class-gravity-forms-booking-manager-plugin-info.php:416
+msgid "Sponsor"
 msgstr ""
 
 #: includes/class-gfbm-form-editor.php:486
@@ -318,6 +334,11 @@ msgstr ""
 
 #: includes/class-gfbm-helpers.php:16
 msgid "Sunday"
+msgstr ""
+
+#: includes/class-gravity-forms-booking-manager-plugin-info.php:425
+#: includes/class-gravity-forms-booking-manager-plugin-info.php:426
+msgid "Support"
 msgstr ""
 
 #: includes/class-gfbm-admin.php:50
@@ -362,6 +383,10 @@ msgstr ""
 
 #: includes/class-gfbm-admin.php:43
 msgid "Upcoming appointments stored on Gravity Forms entries. Hours use the timezone in Settings → General. Cancel sends the entry to the trash, which frees the slot. Reschedule checks capacity, buffers, and the booking window before it saves."
+msgstr ""
+
+#: includes/class-gravity-forms-booking-manager-plugin-info.php:420
+msgid "View details"
 msgstr ""
 
 #: includes/class-gfbm-helpers.php:24
