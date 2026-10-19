@@ -12,4 +12,4 @@ Reports go to support@duppinstech.com. GitHub private vulnerability reporting re
 
 ## Gravity Forms locally
 
-Place `gravityforms-2.10.2.zip` in the repository root. `*.zip` is gitignored, so the commercial Gravity Forms package is not committed. It is installed into the Docker site at http://localhost:8080, not into this repository.
+Place `gravityforms-2.10.2.zip` in `local/`. `local/` and `*.zip` are gitignored, so the commercial Gravity Forms package is not committed. It is installed into the Docker site at http://localhost:8080, not into the release zip.

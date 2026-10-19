@@ -12,4 +12,4 @@ Write "not run" for any check that was not run.
 
 - [ ] Author and copyright stay Odell Duppins / Duppins Technology
 - [ ] No new price, support term, or legal promise
-- [ ] `rules/pr.md` is satisfied
+- [ ] `.claude/rules/pr.md` is satisfied

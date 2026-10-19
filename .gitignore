@@ -4,6 +4,9 @@ dist/
 build/
 release/
 
+# Licensed Gravity Forms package used only to install the local Docker site.
+local/
+
 # OS and editor
 .DS_Store
 Thumbs.db

@@ -1,6 +1,6 @@
 # PLAN.md
 
-Outstanding work to complete Gravity Forms Booking Manager. Outcomes are defined in `INTENT.md`. Ownership rules are in `OWNERSHIP.md`.
+Outstanding work to complete GF Booking Manager. Outcomes are defined in `INTENT.md`. Ownership rules are in `OWNERSHIP.md`.
 
 Phases that do not block each other can proceed together. Docker is available on this machine for PHP and for a local WordPress site.
 
@@ -10,14 +10,14 @@ Status key: `open`, `in progress`, `done`, `needs review`.
 
 Status: done.
 
-- [x] Claude project tree (`CLAUDE.md`, `AGENTS.md`, `rules/`, `agents/`, `workflows/`, `hooks/`).
+- [x] Claude project tree (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`, `.claude/agents/`, `.claude/workflows/`, `.claude/hooks/`).
 - [x] `CLAUDE.local.md` notes Docker PHP and `http://localhost:8080`.
-- [x] `scripts/sync-claude-config.ps1` has been run.
-- [x] Department review of the release diff is the report in `reports/`.
+- [x] Claude project folders live only under `.claude/`. The root copies and the sync script are gone.
+- [x] Department review of the release diff is the report in `.claude/reports/`.
 
 ## Phase 1 — A booking sticks
 
-Status: done. The security contact is support@duppinstech.com. `reports/NEEDS-REVIEW.md` was closed on 2026-10-15.
+Status: done. The security contact is support@duppinstech.com. `.claude/reports/NEEDS-REVIEW.md` was closed on 2026-10-15.
 
 - [x] `php tests/run.php` covers slot generation, blackout, past times, notice, horizon, buffer, capacity, and the checkout lock. Run it with Docker image `php:7.4-cli`.
 - [x] Checkout lock between validation and entry creation (`includes/class-gfbm-slot-lock.php`).
@@ -41,10 +41,10 @@ Status: done.
 Status: done.
 
 - [x] Slot buttons use `aria-pressed`, a focus outline, and weight as well as color. Messages use `textContent`.
-- [x] `languages/gravity-forms-booking-manager.pot` from `scripts/make-pot.php`.
+- [x] `languages/gravity-forms-booking-manager.pot` from `.claude/scripts/make-pot.php`.
 - [x] `uninstall.php` deletes `gfbm_lock_*` options and leaves Gravity Forms entries in place.
 - [x] `CHANGELOG.md` matches `GFBM_VERSION` 0.4.0.
-- [x] `.github/workflows/ci.yml` runs `php -l` and `php tests/run.php` on PHP 7.4 and 8.2.
+- [x] `.github/.claude/workflows/ci.yml` runs `php -l` and `php tests/run.php` on PHP 7.4 and 8.2.
 
 ## Phase 4 — Legal, privacy, and finance
 
@@ -61,9 +61,9 @@ Status: done. Decided 2026-10-15: no charge today, public repository stays, a fu
 Status: done. Published 2026-10-16 as GitHub release `v0.4.0` on `duppinstech/gravity-forms-booking-manager`.
 
 - [x] Version `0.4.0` in the plugin header and `GFBM_VERSION`.
-- [x] `scripts/build-release.ps1` adds the runtime docs and `uninstall.php`. SDLC files and `OWNERSHIP.md` stay out of the zip.
+- [x] `.claude/scripts/build-release.ps1` adds the runtime docs and `uninstall.php`. SDLC files and `OWNERSHIP.md` stay out of the zip.
 - [x] The installable zip is attached to the `v0.4.0` GitHub Release.
-- [x] Department verdicts recorded in `reports/DEPARTMENT-REVIEW.md` and `memory/progress.md`.
+- [x] Department verdicts recorded in `.claude/reports/DEPARTMENT-REVIEW.md` and `.claude/memory/progress.md`.
 
 ## Field layout 0.4.1
 
@@ -80,4 +80,4 @@ Status: done. Published 2026-10-16 as GitHub release `v0.4.1`.
 
 ## Working agreement
 
-A change that touches license, price, or personal data updates `memory/decisions.md`. Security reviews the diff after implementation and after any department that edits files. Do not publish a price or an email that Odell Duppins has not supplied.
+A change that touches license, price, or personal data updates `.claude/memory/decisions.md`. Security reviews the diff after implementation and after any department that edits files. Do not publish a price or an email that Odell Duppins has not supplied.

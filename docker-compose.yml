@@ -1,6 +1,8 @@
 # Local WordPress. Passwords are for this machine only.
-# Gravity Forms is not included. Copy a licensed Gravity Forms plugin into
-# wp-content/plugins on the running site before you can exercise the field.
+# Gravity Forms is not included. The licensed package for local tests is
+# local/gravityforms-2.10.2.zip. Install that into the site's plugins
+# directory. It is gitignored and listed in .distignore, so it is not committed
+# and it is not in the release zip.
 services:
   db:
     image: mysql:8.0

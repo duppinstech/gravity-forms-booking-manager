@@ -1,0 +1,42 @@
+# Paths excluded from the release zip (one per line, relative to repo root).
+.git
+.github
+.claude
+marketing/
+.mcp.json
+.gitignore
+.gitattributes
+.distignore
+bin
+tests
+phpunit.xml.dist
+CLAUDE.md
+CLAUDE.local.md
+AGENTS.md
+INTENT.md
+PLAN.md
+CONTRIBUTING.md
+meeting-notes
+
+# This repository. The licensed Gravity Forms package in local/ is for Docker tests only.
+release/
+local/
+OWNERSHIP.md
+docker-compose.yml
+mcp.json
+.editorconfig
+CLAUDE.local.md.example
+.env
+.env.*
+*.zip
+
+# Root copies of project folders, if one is created again. The real copies are under .claude/.
+agents
+commands
+hooks
+memory
+reports
+rules
+scripts
+skills
+workflows

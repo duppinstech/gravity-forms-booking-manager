@@ -1,6 +1,6 @@
 ---
 name: ui-layout-reviewer
-description: Interface department for Gravity Forms Booking Manager. Use when a change touches the booking calendar, time slots, selection summary, or their CSS.
+description: Interface department for GF Booking Manager. Use when a change touches the booking calendar, time slots, selection summary, or their CSS.
 tools: Read, Grep, Glob
 ---
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Duppins Technology GitHub updater standard: writes the GitHub release body for a version.
-# Usage: bash bin/release-notes.sh <version> <main-plugin-file> [output-file]
+# Usage: bash .claude/scripts/release-notes.sh <version> <main-plugin-file> [output-file]
 #
 # The body starts with the "## Requirements" block the updater reads (R6), then the version's
 # changelog section (R7): CHANGELOG.md "## [x.y.z]" if that file exists, otherwise readme.txt
@@ -12,7 +12,7 @@ version="${1:?version required}"
 main_file="${2:?main plugin file required}"
 out="${3:-release-notes.md}"
 
-cd "$(dirname "$0")/.."
+cd "$(dirname "$0")/../.."
 
 requires=$(sed -n 's/^ \* Requires at least:[[:space:]]*//p' "$main_file" | tr -d '\r')
 requires_php=$(sed -n 's/^ \* Requires PHP:[[:space:]]*//p' "$main_file" | tr -d '\r')

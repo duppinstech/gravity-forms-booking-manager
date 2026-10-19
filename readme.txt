@@ -1,14 +1,14 @@
-=== Gravity Forms Booking Manager ===
+=== GF Booking Manager ===
 Contributors: duppinstech
 Tags: booking, appointments, calendar, scheduling
 Requires at least: 6.0
 Tested up to: 6.7.2
 Requires PHP: 7.4
-Stable tag: 0.4.2
+Stable tag: 0.4.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Adds an inline booking calendar and available time slots field to Gravity Forms.
+Adds an inline booking calendar and available time slots to a Gravity Forms form. Not affiliated with Rocketgenius.
 
 == Description ==
 
@@ -75,6 +75,10 @@ The timezone in Settings → General.
 
 No. Cancel and reschedule are on Forms → Bookings. Cancel sends the entry to the trash, which frees the slot.
 
+= Is this an official Gravity Forms add-on? =
+
+No. Gravity Forms is a separate product. Gravity Forms is a trademark of Rocketgenius, Inc. Duppins Technology is not affiliated with Rocketgenius.
+
 = Is there a charge? =
 
 There is no charge for this plugin today. The public GitHub repository and its releases are the distribution channel.
@@ -82,6 +86,9 @@ There is no charge for this plugin today. The public GitHub repository and its r
 == Screenshots ==
 
 == Changelog ==
+
+= 0.4.3 =
+* The plugin name is GF Booking Manager. Duppins Technology is not affiliated with Rocketgenius.
 
 = 0.4.2 =
 * The plugins screen shows a banner and the description, installation, questions, and changelog from this readme.
@@ -109,6 +116,9 @@ There is no charge for this plugin today. The public GitHub repository and its r
 * Booking Manager field, business hours, blocked times, blackout dates, layouts, merge tags, and GitHub updates.
 
 == Upgrade Notice ==
+
+= 0.4.3 =
+The plugins screen name is GF Booking Manager.
 
 = 0.4.2 =
 Plugins screen details, sponsor and support links, and GitHub updates.

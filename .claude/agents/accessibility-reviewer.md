@@ -1,6 +1,6 @@
 ---
 name: accessibility-reviewer
-description: Accessibility department for Gravity Forms Booking Manager. Use when a change touches the calendar, time slots, form editor controls, or their CSS.
+description: Accessibility department for GF Booking Manager. Use when a change touches the calendar, time slots, form editor controls, or their CSS.
 tools: Read, Grep, Glob
 ---
 

@@ -18,6 +18,7 @@ Settled choices. Change one only by editing this file in the same change that ch
 
 ## Product
 
+- Decided by Odell Duppins on 2026-10-19. The public product name is GF Booking Manager. The folder, text domain `gravity-forms-booking-manager`, and GitHub repository stay unchanged. Gravity Forms is a trademark of Rocketgenius, Inc. Duppins Technology is not affiliated with Rocketgenius. The name is used only to say which form product the field runs on.
 - The bookable unit is one Gravity Forms field of type `booking_manager`.
 - Date and time are stored on the entry as inputs `.1` and `.2`, not in a custom table.
 - Default capacity is 1. Capacity, buffer, minimum notice, and booking horizon are field settings.
@@ -27,10 +28,10 @@ Settled choices. Change one only by editing this file in the same change that ch
 - Cancel and reschedule for staff are on **Forms → Bookings**. Cancel trashes the entry. Visitors are not given a self-service cancel page.
 - Entry data survives uninstall. Uninstall deletes lock options only.
 - Updates ship as a zip asset on GitHub Releases, repo `duppinstech/gravity-forms-booking-manager`.
-- Update requests send the plugin name and WordPress version. They do not send the site URL.
+- Update requests identify the plugin folder. They do not send the site address or the WordPress version.
 - Security reports go to support@duppinstech.com and to GitHub private vulnerability reporting.
 
 ## Testing
 
 - `php tests/run.php` covers slot rules without WordPress.
-- `docker-compose.yml` boots WordPress on port 8080. A licensed Gravity Forms zip may sit in the repo root. `*.zip` is gitignored. Install that zip only into the local site, never into git.
+- `docker-compose.yml` boots WordPress on port 8080. The licensed Gravity Forms package for local tests is `local/gravityforms-2.10.2.zip`. `local/` and `*.zip` are gitignored. Install that zip only into the local site, never into git or the release zip.

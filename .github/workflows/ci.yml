@@ -25,4 +25,4 @@ jobs:
         run: |
           set -euo pipefail
           version=$(sed -n 's/^ \* Version:[[:space:]]*//p' gravity-forms-booking-manager.php | tr -d '\r')
-          bash bin/release-notes.sh "$version" gravity-forms-booking-manager.php "$RUNNER_TEMP/release-notes.md"
+          bash .claude/scripts/release-notes.sh "$version" gravity-forms-booking-manager.php "$RUNNER_TEMP/release-notes.md"

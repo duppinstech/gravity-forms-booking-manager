@@ -27,4 +27,4 @@ Match the code that is already here. This plugin targets PHP 7.4.
 
 ## Formatting
 
-No PHP_CodeSniffer or Prettier config is installed. Do not reformat an entire file as a side effect of a one-line fix. `hooks/post-edit-format.sh` does not rewrite files until a formatter is added.
+No PHP_CodeSniffer or Prettier config is installed. Do not reformat an entire file as a side effect of a one-line fix. `.claude/hooks/post-edit-format.sh` does not rewrite files until a formatter is added.

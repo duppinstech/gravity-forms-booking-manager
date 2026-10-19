@@ -1,6 +1,6 @@
 <?php
 
-$root = dirname(__DIR__);
+$root = dirname(__DIR__, 2);
 $files = [
     $root . '/gravity-forms-booking-manager.php',
     $root . '/uninstall.php',
@@ -35,7 +35,7 @@ ksort($strings);
 $out = [];
 $out[] = 'msgid ""';
 $out[] = 'msgstr ""';
-$out[] = '"Project-Id-Version: Gravity Forms Booking Manager 0.4.2\n"';
+$out[] = '"Project-Id-Version: GF Booking Manager 0.4.3\n"';
 $out[] = '"Language: \n"';
 $out[] = '"MIME-Version: 1.0\n"';
 $out[] = '"Content-Type: text/plain; charset=UTF-8\n"';

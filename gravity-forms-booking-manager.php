@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: Gravity Forms Booking Manager
+ * Plugin Name: GF Booking Manager
  * Plugin URI: https://github.com/duppinstech/gravity-forms-booking-manager
- * Description: Adds an inline booking calendar and available time slots field to Gravity Forms.
- * Version: 0.4.2
+ * Description: Adds an inline booking calendar and available time slots to a Gravity Forms form. Not affiliated with Rocketgenius.
+ * Version: 0.4.3
  * Author: Duppins Technology
  * Author URI: https://duppinstech.com
  * License: GPL-2.0-or-later
@@ -18,7 +18,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('GFBM_VERSION', '0.4.2');
+define('GFBM_VERSION', '0.4.3');
 define('GFBM_FILE', __FILE__);
 define('GFBM_PATH', plugin_dir_path(__FILE__));
 define('GFBM_URL', plugin_dir_url(__FILE__));

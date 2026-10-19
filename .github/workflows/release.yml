@@ -37,10 +37,10 @@ jobs:
           php tests/run.php
       - name: Build release zip
         shell: pwsh
-        run: .\scripts\build-release.ps1
+        run: .\.claude/scripts/build-release.ps1
       - name: Write release notes
         shell: bash
-        run: bash bin/release-notes.sh "${GITHUB_REF_NAME#v}" gravity-forms-booking-manager.php release-notes.md
+        run: bash .claude/scripts/release-notes.sh "${GITHUB_REF_NAME#v}" gravity-forms-booking-manager.php release-notes.md
       - name: Attach zip to the GitHub release
         env:
           GH_TOKEN: ${{ github.token }}

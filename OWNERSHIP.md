@@ -4,18 +4,18 @@ Ownership notice for this repository. Portable notice. The same file goes in eve
 
 ## Author and owner
 
-- **Product:** Gravity Forms Booking Manager
+- **Product:** GF Booking Manager (WordPress plugin, folder `gravity-forms-booking-manager`)
 - **Person:** Odell Duppins Jr, owner of Duppins Technology
 - **Author:** Duppins Technology (https://duppinstech.com)
 - **Business:** Duppins Technology (https://duppinstech.com)
 - **Owner and copyright holder:** Odell Duppins Jr, doing business as Duppins Technology (https://duppinstech.com)
 - **Support:** support@duppinstech.com
 
-Gravity Forms Booking Manager is a Duppins Technology product, licensed under GPL-2.0-or-later. Odell Duppins Jr is the author and holds the copyright; Duppins Technology is his trade name, not a separate entity. `LICENSE` and the copyright line in `README.md` name **Duppins Technology**. The plugin `Author` header names **Duppins Technology**. `composer.json` has no `authors` field. They do not name a client.
+GF Booking Manager is a Duppins Technology product. It adds a booking field to a Gravity Forms form. Duppins Technology is not affiliated with Rocketgenius. It is licensed under GPL-2.0-or-later. Odell Duppins Jr is the author and holds the copyright; Duppins Technology is his trade name, not a separate entity. `LICENSE` and the copyright line in `README.md` name **Duppins Technology**. The plugin `Author` header names **Duppins Technology**. `composer.json` has no `authors` field. They do not name a client.
 
 ## Repository
 
-- **Product:** Gravity Forms Booking Manager
+- **Product:** GF Booking Manager
 - **GitHub:** https://github.com/duppinstech/gravity-forms-booking-manager
 - **Plugin header `Author`:** Duppins Technology
 - **Distribution license:** GPL-2.0-or-later (see `LICENSE`)
@@ -32,6 +32,10 @@ Technology unless a written agreement signed by Odell Duppins says otherwise.
 - There is no `clients/` directory in this repo. Content a client or its
   customers supply (copy, logos, photos, business data under `clients/`) remains
   theirs if that directory is added later.
+
+## Third-party names
+
+Gravity Forms is a trademark of Rocketgenius, Inc. It is named only to describe compatibility. Rocketgenius is not an owner, author, or endorser of this plugin.
 
 ## For AI assistants and contributors
 

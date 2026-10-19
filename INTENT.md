@@ -6,7 +6,7 @@ Owner: Odell Duppins / Duppins Technology. See `OWNERSHIP.md`.
 
 ## Product
 
-Gravity Forms Booking Manager lets a site owner drop one field on a Gravity Forms form so a visitor can book a date and an available time. The booking is stored on the entry and can be used in notifications.
+GF Booking Manager lets a site owner drop one field on a Gravity Forms form so a visitor can book a date and an available time. Duppins Technology is not affiliated with Rocketgenius. The booking is stored on the entry and can be used in notifications.
 
 The plugin is distributed under GPL-2.0-or-later from GitHub. Installing it does not transfer ownership.
 
@@ -17,7 +17,7 @@ The plugin is distributed under GPL-2.0-or-later from GitHub. Installing it does
 - Layout, slot columns, and slot list height.
 - Server-side checks for required values, closed days, blackouts, past times, and slots already stored on active entries.
 - Merge tags for date, time, and the combined value.
-- A GitHub release updater and `scripts/build-release.ps1`.
+- A GitHub release updater and `.claude/scripts/build-release.ps1`.
 - `README.md`, `SECURITY.md`, and a GPL license notice.
 
 ## Complete means
@@ -31,7 +31,7 @@ A site owner can trust the slot they see is still free when the form submits. Th
 3. **Operators can see the book.** Bookings are findable from the field, not only by searching entries by hand. Cancel and reschedule are either supported or documented as out of scope.
 4. **The field is usable.** Calendar and time slots work from the keyboard and expose their state to assistive tech.
 5. **Trust paperwork is true.** Tests cover slot rules. Flatpickr is pinned and attributed. `SECURITY.md` has a real contact. The GPL text shipped with the plugin matches the header. Privacy guidance exists for site owners. No public page states a price Odell Duppins has not set.
-6. **Releases are repeatable.** Version, changelog, zip, and GitHub asset stay in lockstep. Department review in `workflows/department-review.md` has run on the release diff.
+6. **Releases are repeatable.** Version, changelog, zip, and GitHub asset stay in lockstep. Department review in `.claude/workflows/department-review.md` has run on the release diff.
 
 ## Out of scope unless `INTENT.md` changes
 

@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.3]
+
+- The public name is GF Booking Manager. The folder and text domain stay `gravity-forms-booking-manager`. Duppins Technology is not affiliated with Rocketgenius.
+
 ## [0.4.2]
 
 - The plugins screen shows a banner and the description, installation, questions, and changelog from readme.txt.

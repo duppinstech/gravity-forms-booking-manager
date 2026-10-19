@@ -16,11 +16,11 @@ Use a Conventional Commit subject: `type: why this changed`.
 
 Types in use: `feat`, `fix`, `docs`, `chore`, `ci`.
 
-One concern per commit. Do not commit `.env`, `CLAUDE.local.md`, `.claude/settings.local.json`, or anything under `release/`.
+One concern per commit. Do not commit `.env`, `CLAUDE.local.md`, `.claude/settings.local.json`, `local/`, or anything under `release/`.
 
 ## Pull requests
 
-Open the pull request against `main`. Follow `rules/pr.md`.
+Open the pull request against `main`. Follow `.claude/rules/pr.md`.
 
 - One sentence on the outcome, then what changed and how it was checked.
 - Say "not run" when a check was not run.

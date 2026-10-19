@@ -1,11 +1,11 @@
 ---
 name: code-review
-description: Reviews Gravity Forms Booking Manager diffs for correctness, booking-rule enforcement, escaping, and ownership. Use when reviewing a pull request, a local diff, or when the user asks for a code review of this plugin.
+description: Reviews GF Booking Manager diffs for correctness, booking-rule enforcement, escaping, and ownership. Use when reviewing a pull request, a local diff, or when the user asks for a code review of this plugin.
 ---
 
 # Code review
 
-Read `rules/code-style.md`, `rules/api-conventions.md`, and `OWNERSHIP.md` before commenting.
+Read `.claude/rules/code-style.md`, `.claude/rules/api-conventions.md`, and `OWNERSHIP.md` before commenting.
 
 ## What to check
 
@@ -33,4 +33,4 @@ Read `rules/code-style.md`, `rules/api-conventions.md`, and `OWNERSHIP.md` befor
 <what evidence exists>
 ```
 
-Lead with findings. Security depth belongs to `agents/security-reviewer.md`. Do not include exploit steps.
+Lead with findings. Security depth belongs to `.claude/agents/security-reviewer.md`. Do not include exploit steps.

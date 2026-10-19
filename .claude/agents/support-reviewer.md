@@ -1,6 +1,6 @@
 ---
 name: support-reviewer
-description: Support department for Gravity Forms Booking Manager. Use when docs, admin labels, validation messages, or notification merge tags change, so site owners can still set up and troubleshoot the field.
+description: Support department for GF Booking Manager. Use when docs, admin labels, validation messages, or notification merge tags change, so site owners can still set up and troubleshoot the field.
 tools: Read, Grep, Glob
 ---
 
@@ -20,4 +20,4 @@ You are support. Read `README.md` and compare it to the code the diff changed.
 
 `PASS` when a site owner can set up the changed behavior from the docs. `PASS WITH NOTES` when the README is still accurate and a deeper help article is only a gap in `PLAN.md`. `BLOCK` when the docs describe a control or merge tag that the code does not have, or when a new setting is silent.
 
-Do not write marketing claims. Hand those to `agents/marketing-reviewer.md`.
+Do not write marketing claims. Hand those to `.claude/agents/marketing-reviewer.md`.

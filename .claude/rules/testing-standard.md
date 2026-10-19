@@ -11,7 +11,7 @@ There is no PHPUnit or JavaScript test suite in this repo yet. Until Phase 1 of 
 
 ## Minimum on every PHP change
 
-- `php -l` on each touched PHP file. `hooks/validate-code.sh` does this when `php` is on the path.
+- `php -l` on each touched PHP file. `.claude/hooks/validate-code.sh` does this when `php` is on the path.
 - Say which booking rule you exercised: open day, closed day, blackout, blocked range, past time today, required field empty, slot already on an active entry.
 
 ## When automated tests exist
@@ -31,4 +31,4 @@ Cover at least:
 - Merge tags `{Field Label:ID.1}` and `{Field Label:ID.2}` resolve in a notification.
 - Form editor saves hours, blocks, and blackouts and reloads them.
 
-Record the pass or the gap in the PR using `commands/review.md`. A missing suite is a QA note, not a reason to skip the manual pass.
+Record the pass or the gap in the PR using `.claude/commands/review.md`. A missing suite is a QA note, not a reason to skip the manual pass.

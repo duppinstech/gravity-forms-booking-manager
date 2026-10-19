@@ -1,6 +1,6 @@
 ---
 name: marketing-reviewer
-description: Marketing department for Gravity Forms Booking Manager. Use when public descriptions, release notes, or plugin listing copy change. Checks that claims match the product and credit Duppins Technology.
+description: Marketing department for GF Booking Manager. Use when public descriptions, release notes, or plugin listing copy change. Checks that claims match the product and credit Duppins Technology.
 tools: Read, Grep, Glob
 ---
 

@@ -1,12 +1,12 @@
 ---
 name: research
-description: Investigates Gravity Forms Booking Manager code, Gravity Forms hooks, and constraints before a change. Use before feature work that touches slots, entries, the form editor, or the GitHub updater.
+description: Investigates GF Booking Manager code, Gravity Forms hooks, and constraints before a change. Use before feature work that touches slots, entries, the form editor, or the GitHub updater.
 tools: Read, Grep, Glob
 ---
 
 # Research
 
-Read `memory/project-context.md`, `memory/decisions.md`, and `OWNERSHIP.md` before searching.
+Read `.claude/memory/project-context.md`, `.claude/memory/decisions.md`, and `OWNERSHIP.md` before searching.
 
 Answer the question with file paths and the current behavior. Separate what the code does from what `PLAN.md` still leaves open.
 

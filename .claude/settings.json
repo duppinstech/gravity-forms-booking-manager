@@ -19,7 +19,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash hooks/block-sensitive-writes.sh"
+            "command": "bash .claude/hooks/block-sensitive-writes.sh"
           }
         ]
       }
@@ -30,11 +30,11 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash hooks/validate-code.sh"
+            "command": "bash .claude/hooks/validate-code.sh"
           },
           {
             "type": "command",
-            "command": "bash hooks/post-edit-format.sh"
+            "command": "bash .claude/hooks/post-edit-format.sh"
           }
         ]
       }

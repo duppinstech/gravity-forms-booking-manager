@@ -1,6 +1,6 @@
 # Privacy notes for site owners
 
-Gravity Forms Booking Manager stores the appointment date and time on the Gravity Forms entry (inputs `.1` and `.2`). It does not create a separate booking table. Deleting or exporting the entry in Gravity Forms deletes or exports the appointment.
+GF Booking Manager stores the appointment date and time on the Gravity Forms entry (inputs `.1` and `.2`). It does not create a separate booking table. Deleting or exporting the entry in Gravity Forms deletes or exports the appointment.
 
 The public form asks WordPress which times are still open. The answer is the list of open times. Someone who can use the form can infer which times are already full. The response does not include names, email addresses, or entry IDs.
 

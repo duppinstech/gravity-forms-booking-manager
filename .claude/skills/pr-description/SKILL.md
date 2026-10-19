@@ -1,11 +1,11 @@
 ---
 name: pr-description
-description: Writes pull request titles and bodies for Gravity Forms Booking Manager. Use when opening a PR, drafting a PR description, or summarizing a branch for review.
+description: Writes pull request titles and bodies for GF Booking Manager. Use when opening a PR, drafting a PR description, or summarizing a branch for review.
 ---
 
 # PR description
 
-Read `rules/pr.md` and `OWNERSHIP.md`.
+Read `.claude/rules/pr.md` and `OWNERSHIP.md`.
 
 ## Title
 

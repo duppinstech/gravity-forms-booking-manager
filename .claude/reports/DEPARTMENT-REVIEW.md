@@ -32,11 +32,11 @@ The security delta closed the delete-capability finding and the zip-host finding
 - Booking counts stop after 10,000 matching entries for one date.
 - Automated tests cover slot rules, not a live Gravity Forms submit. Gravity Forms is not in the Docker image.
 - Editor controls for business hours, blocked times, and blackout dates do not all have programmatic names. The public slot buttons do.
-- The public GitHub repository can still distribute the plugin beside a payment portal. See `reports/NEEDS-REVIEW.md`.
+- The public GitHub repository can still distribute the plugin beside a payment portal. See `.claude/reports/NEEDS-REVIEW.md`.
 
 ## Needs you
 
-See `reports/NEEDS-REVIEW.md`.
+See `.claude/reports/NEEDS-REVIEW.md`.
 
 1. Keep public GitHub Releases, or make the payment portal the only publish point.
 2. Turn on GitHub private vulnerability reporting, and send an email if you want one listed.

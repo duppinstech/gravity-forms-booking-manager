@@ -7,13 +7,13 @@ paths:
 
 ## Title and body
 
-One sentence on the user-visible outcome, then what changed and how it was checked. Follow `skills/pr-description/SKILL.md`.
+One sentence on the user-visible outcome, then what changed and how it was checked. Follow `.claude/skills/pr-description/SKILL.md`.
 
 ## Required before merge
 
 - The diff matches an outcome in `INTENT.md` or a task in `PLAN.md`.
 - `OWNERSHIP.md` still holds: author and copyright are Odell Duppins / Duppins Technology. No client is named as owner.
-- `workflows/department-review.md` has run. Security has a verdict on the original diff and on any file a later department edited.
+- `.claude/workflows/department-review.md` has run. Security has a verdict on the original diff and on any file a later department edited.
 - License, price, and disclaimer edits are called out in the PR body. A new price is `BLOCK` until Odell Duppins has set it.
 - Version bumps touch the plugin header and `GFBM_VERSION` together, and only on a release PR.
 

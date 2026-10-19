@@ -1,11 +1,11 @@
 ---
 name: testing-patterns
-description: Defines how to test Gravity Forms Booking Manager slot rules, validation, and the form editor. Use when adding tests, writing a manual test pass, or checking a booking bugfix.
+description: Defines how to test GF Booking Manager slot rules, validation, and the form editor. Use when adding tests, writing a manual test pass, or checking a booking bugfix.
 ---
 
 # Testing patterns
 
-Read `rules/testing-standard.md`. The repo has no test runner yet. Prefer a failing example before a fix when you are changing slot math.
+Read `.claude/rules/testing-standard.md`. The repo has no test runner yet. Prefer a failing example before a fix when you are changing slot math.
 
 ## Slot cases
 

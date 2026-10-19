@@ -1,4 +1,4 @@
-# Gravity Forms Booking Manager
+# GF Booking Manager
 
 WordPress plugin that adds a **Booking Manager** field to [Gravity Forms](https://www.gravityforms.com/). Visitors pick a date from an inline calendar and an available time slot; bookings are stored on the entry and can be used in notifications.
 
@@ -13,7 +13,7 @@ WordPress plugin that adds a **Booking Manager** field to [Gravity Forms](https:
 ### From GitHub (development)
 
 1. Clone this repository into `wp-content/plugins/gravity-forms-booking-manager/`.
-2. Activate **Gravity Forms Booking Manager** under **Plugins**.
+2. Activate **GF Booking Manager** under **Plugins**.
 
 ### From a release ZIP (production)
 
@@ -83,7 +83,7 @@ In WordPress admin, open **Forms → Bookings**. The list shows upcoming appoint
 
 ## Updates from GitHub
 
-The plugin checks `https://github.com/duppinstech/gravity-forms-booking-manager/releases/latest` every 12 hours.
+The plugin checks `https://github.com/duppinstech/gravity-forms-booking-manager/releases/latest`. A successful check is cached for 6 hours.
 
 1. Create a [GitHub Release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) with a tag (e.g. `v0.2.0`).
 2. Attach a zip built with the script below as a release **asset** (required — WordPress cannot use the auto-generated source zip reliably).
@@ -95,7 +95,7 @@ WordPress will show an update under **Dashboard → Plugins** when the release v
 From the repository root (PowerShell):
 
 ```powershell
-.\scripts\build-release.ps1
+.\.claude/scripts/build-release.ps1
 ```
 
 Output: `release/gravity-forms-booking-manager.zip` (gitignored). Upload that file to the GitHub release.
