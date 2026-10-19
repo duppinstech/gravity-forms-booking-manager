@@ -13,11 +13,11 @@ Status: done.
 - [x] Claude project tree (`CLAUDE.md`, `AGENTS.md`, `rules/`, `agents/`, `workflows/`, `hooks/`).
 - [x] `CLAUDE.local.md` notes Docker PHP and `http://localhost:8080`.
 - [x] `scripts/sync-claude-config.ps1` has been run.
-- [ ] Department review of the release diff is the report in `reports/`.
+- [x] Department review of the release diff is the report in `reports/`.
 
 ## Phase 1 — A booking sticks
 
-Status: done, except the security email in **Needs review**.
+Status: done. The security contact is support@duppinstech.com. `reports/NEEDS-REVIEW.md` was closed on 2026-10-15.
 
 - [x] `php tests/run.php` covers slot generation, blackout, past times, notice, horizon, buffer, capacity, and the checkout lock. Run it with Docker image `php:7.4-cli`.
 - [x] Checkout lock between validation and entry creation (`includes/class-gfbm-slot-lock.php`).

@@ -1,5 +1,12 @@
 # Progress
 
+## 2026-10-18
+
+- Department review of the published v0.4.2 diff (`3e80ffd..64617c6`) is in `reports/DEPARTMENT-REVIEW.md`. No BLOCK.
+- Security PASS WITH NOTES. Quality PASS WITH NOTES. Product PASS. Accessibility PASS WITH NOTES. Interface PASS. Privacy PASS. Legal PASS. Finance PASS WITH NOTES. Support PASS. Marketing PASS. Release PASS. Final security PASS WITH NOTES.
+- `PRIVACY.md` now says the update request identifies the plugin folder and does not send the site address or the WordPress version.
+- `OWNERSHIP.md` names Odell Duppins Jr as the copyright holder. The plugin Author header stays Duppins Technology.
+
 ## 2026-10-17
 
 - SDLC baseline on `chore/sdlc-baseline`. Docs, GitHub config, and Claude settings only. No application code.

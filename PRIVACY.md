@@ -4,7 +4,7 @@ Gravity Forms Booking Manager stores the appointment date and time on the Gravit
 
 The public form asks WordPress which times are still open. The answer is the list of open times. Someone who can use the form can infer which times are already full. The response does not include names, email addresses, or entry IDs.
 
-Update checks call the GitHub API for this plugin's latest release. The request identifies the plugin and the WordPress version. It does not include the site address.
+Update checks call the GitHub API for this plugin's latest release. The request identifies the plugin folder. It does not include the site address or the WordPress version.
 
 Business hours use the timezone in WordPress **Settings → General**.
 
